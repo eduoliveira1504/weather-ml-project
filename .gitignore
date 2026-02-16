@@ -1,0 +1,95 @@
+# Cache da API
+.cache
+.cache.sqlite
+*.sqlite
+*.db
+
+
+# Ambientes virtuais Python
+venv/
+env/
+ENV/
+.venv/
+
+
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+
+# Dados (geralmente não commitamos dados brutos)
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.csv
+data/cache/
+# NOVO: Imagens de satélite e datasets (arquivos grandes)
+data/raw/**/*.png
+data/raw/**/*.jpg
+data/raw/**/*.tif
+data/raw/**/*.jp2
+data/raw/deepglobe/
+data/raw/sentinel/
+
+
+# Outputs (gráficos podem ser grandes)
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+# NOVO: Outputs adicionais
+outputs/**/*.tif
+outputs/**/*.geojson
+
+
+# Modelos treinados (podem ser grandes)
+*.pkl
+*.h5
+*.keras
+*.pt
+*.pth
+models/*.pkl
+# NOVO: Todos os tipos de checkpoint e pasta models completa
+*.pth.tar
+*.ckpt
+*.weights
+*.onnx
+models/
+
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Logs
+*.log
+logs/
+
+
+# Credenciais e configurações sensíveis
+.env
+.env.local
+config/secrets.yml
+credentials.json
+
+
+# Arquivos temporários
+*.tmp
+temp/
+tmp/
